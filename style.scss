@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", sans-serif;
+}
+html{
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+@import './mixin.scss';
+@import './header.scss';
+@import './main.scss';
+@import './menu.scss';
+@import './where.scss';
+

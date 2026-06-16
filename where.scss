@@ -1,0 +1,129 @@
+@import './mixin.scss';
+
+
+
+
+.where{
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 0 20px;
+
+    h2{
+        width: 290px;
+        height: 40px;
+        background-color: #000;
+        color: white;
+        margin: 0 auto 60px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+.find{
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 40px;
+
+     @include tablet {
+        max-width: 700px;
+
+        .address,
+        .fyi,
+        .reserve {
+            font-size: 20px;
+        }
+    }
+
+     @include mobile {
+        margin: 60px auto;
+        padding: 0 15px;
+
+        h2 {
+            font-size: 16px;
+        }
+
+        .address,
+        .fyi,
+        .reserve {
+            font-size: 18px;
+        }
+
+        .contact-form {
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+      @include tabletmini {
+        .address,
+        .fyi,
+        .reserve {
+            font-size: 16px;
+        }
+
+        .fyi-text span {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+.fyi{
+    background-color: #000;
+    font-size: 20px;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 40px;
+    width: max-content;
+    height: max-content;
+
+    span{
+        
+        background-color: #000;
+        color: white;
+        padding: 4px 10px;
+        margin-right: 10px;
+    }
+
+
+    
+}
+p{
+        
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+    
+.reserve{
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 30px;
+    }
+    .contact-form input{
+        width: 100%;
+        padding: 18px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+
+       
+    }
+    button{
+        padding: 14px 25px;
+        background-color: #000;
+        color: white;
+        border: none;
+        font-size: 16px;
+        letter-spacing: 1px;
+
+        
+       }button:hover{
+            background-color:gray;
+        }
+    }

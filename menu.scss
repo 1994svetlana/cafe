@@ -1,0 +1,114 @@
+@import './mixin.scss';
+
+
+
+
+.menu{
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+
+        @include tablet {
+        padding: 35px;
+    }
+
+    @include tabletmini {
+        padding: 25px;
+    }
+
+    @include mobile {
+        padding: 20px 15px;
+    }
+    
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+    h2{
+      
+        width: 150px;
+        height: 30px;
+        margin: auto;
+       margin-bottom: 20px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        text-align: center;
+        align-items: center;
+        background: black;
+        color: white;
+
+    }
+    img{
+         width: 700px;
+    margin: 30px auto;
+ @include tablet {
+        width: 600px;
+    }
+
+    @include tabletmini {
+        width: 100%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+
+    }
+}
+.menu-food{
+  margin-bottom: 40px;
+
+
+      @include tablet {
+        margin-bottom: 35px;
+    }
+
+    @include tabletmini {
+        margin-bottom: 30px;
+    }
+
+    @include mobile {
+        margin-bottom: 25px;
+    }
+
+    h3{
+        
+        margin-top: 0;
+        font-size: 30px;
+        font-weight: 100;
+        color: #222;
+        margin-bottom: 20px;
+     
+
+            @include tablet {
+        font-size: 28px;
+    }
+
+    @include tabletmini {
+        font-size: 24px;
+    }
+
+    @include mobile {
+        font-size: 22px;
+    }
+    }
+
+    p{
+        font-size: 18px;
+        color: #757575;
+        line-height: 1.8;
+
+            @include tablet {
+        font-size: 17px;
+    }
+
+    @include tabletmini {
+        font-size: 16px;
+    }
+
+    @include mobile {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    }
+}
